@@ -38,7 +38,7 @@ The project on our local machine has been created with version control, so we ca
 
 {{< video https://youtu.be/yeT5BToqTUg >}}
 
-## Extrat da from Excel
+## Extract data from Excel
 
 In this project we're going to use only data from 2019 to 2024 from sheets Q1, Q5 and Q6 of the Excel file. To do so, we'll build an R *script* that will *download* the original data and then prepare it in the format we want.
 

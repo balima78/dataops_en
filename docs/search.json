@@ -170,11 +170,11 @@
     ]
   },
   {
-    "objectID": "202-materia.html#extrat-da-from-excel",
-    "href": "202-materia.html#extrat-da-from-excel",
+    "objectID": "202-materia.html#extract-data-from-excel",
+    "href": "202-materia.html#extract-data-from-excel",
     "title": "4  Preparing the data",
-    "section": "4.4 Extrat da from Excel",
-    "text": "4.4 Extrat da from Excel\nIn this project we’re going to use only data from 2019 to 2024 from sheets Q1, Q5 and Q6 of the Excel file. To do so, we’ll build an R script that will download the original data and then prepare it in the format we want.\n\nR script",
+    "section": "4.4 Extract data from Excel",
+    "text": "4.4 Extract data from Excel\nIn this project we’re going to use only data from 2019 to 2024 from sheets Q1, Q5 and Q6 of the Excel file. To do so, we’ll build an R script that will download the original data and then prepare it in the format we want.\n\nR script",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
     ]
@@ -300,11 +300,11 @@
     ]
   },
   {
-    "objectID": "204-versoes.html#back-to-thee-future",
-    "href": "204-versoes.html#back-to-thee-future",
+    "objectID": "204-versoes.html#back-to-the-future",
+    "href": "204-versoes.html#back-to-the-future",
     "title": "6  Previous versions",
-    "section": "6.3 Back to thee future",
-    "text": "6.3 Back to thee future\nWe may also need to view a previous commit and return to the current point, without registering any changes.",
+    "section": "6.3 Back to the future",
+    "text": "6.3 Back to the future\nWe may also need to view a previous commit and return to the current point, without registering any changes.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
     ]

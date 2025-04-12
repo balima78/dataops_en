@@ -18,7 +18,7 @@ In the Git Bash terminal, we use the command `git checkout <commit-id>`:
 
 {{< video https://youtu.be/Q3YEYsDvA7A >}}
 
-## Back to thee future
+## Back to the future
 
 We may also need to view a previous *commit* and return to the current point, without registering any changes.
 
