@@ -1,0 +1,482 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DataOps basics",
+    "section": "",
+    "text": "A practical guide with R, Git and Quarto",
+    "crumbs": [
+      "A practical guide with R, Git and Quarto"
+    ]
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "DataOps basics",
+    "section": "License",
+    "text": "License\nThis course is licensed under the WTFPL.",
+    "crumbs": [
+      "A practical guide with R, Git and Quarto"
+    ]
+  },
+  {
+    "objectID": "101-intro.html",
+    "href": "101-intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Learning assessment\nWhat is DataOps, according to the definition on Wikipedia?\nIn which areas can the DataOps approach be applied??",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "101-intro.html#learning-assessment",
+    "href": "101-intro.html#learning-assessment",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "A project management software A type of database for data science A data visualisation technique A set of practices that combines data processes with software engineering and agile project management methods\n\n\n\n Public institutions, private industry and academic research Only in public institutions Exclusively in technology companies Only in open source projects\n\n\n\n\n\nGovernment Analysis Function. 2024. “Reproducible Analytical Pipelines (RAP).” 2024. https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/.\n\n\n“The DataOps Manifesto.” 2024. 2024. https://dataopsmanifesto.org/en/.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "102-caracteriza.html",
+    "href": "102-caracteriza.html",
+    "title": "2  Description",
+    "section": "",
+    "text": "2.1 Objectives\nBy the end of this course, we should be able to:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Description</span>"
+    ]
+  },
+  {
+    "objectID": "102-caracteriza.html#objectives",
+    "href": "102-caracteriza.html#objectives",
+    "title": "2  Description",
+    "section": "",
+    "text": "Understand the principles of DataOps:\n\nUnderstand how a DataOps approach improves development, collaboration and automation in data projects.\nApply the fundamental concepts of DataOps in different contexts (public, private, academic).\n\nUse Git for version control and collaboration:\n\nImplement version control in data projects using Git.\nCollaborate effectively on data projects, manage changes and contribute as part of an integrated team.\n\nAutomate data workflows with R:\n\nCreate and automate scripts in R for reproducible and efficient analyses.\nUse programming and automation good practices in data science.\n\nGenerate reproducible documentation with Quarto:\n\nCreate dynamic and interactive dashboards using Quarto.\nIntegrate Quarto with Git for version control and automating documents in data pipelines.\n\nImplement a complete DataOps Pipeline:\n\nCombine R, Git and Quarto to build an automated DataOps pipeline.\nDeliver reliable and reproducible results continuously in data science projects.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Description</span>"
+    ]
+  },
+  {
+    "objectID": "102-caracteriza.html#prerequisites",
+    "href": "102-caracteriza.html#prerequisites",
+    "title": "2  Description",
+    "section": "2.2 Prerequisites",
+    "text": "2.2 Prerequisites\nThis course is designed for students and professionals who want to learn how to apply the principles of DataOps in data science projects, automating workflows and ensuring the reproducibility of results. To follow the content effectively, it is recommended that participants have the following knowledge:\n\nFamiliarity with R:\n\nThe course will use R as the main programming language for data analysiss. It is desirable that participants have a basic familiarity with R, including the creation of simple scripts and the use of R packages.\nHowever, even if they are not fluent R users, they will be able to follow the course, as clear and practical examples will be given.\n\nUnderstanding of Git (not required, but recommended):\n\nA basic understanding of version control with Git will be useful, but the course will include an introduction to the tool so that beginners will be able to learn the concepts and apply the practices throughout the course.\n\nCuriosity and willingness to learn:\n\nThis course has a hands-on approach, so curiosity and a willingness to learn new tools and methodologies are essential. We will take participants step-by-step through the use of R, Git and Quarto and show how these tools can be integrated into an efficient DataOps pipeline.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Description</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html",
+    "href": "201-instal.html",
+    "title": "3  Instalation",
+    "section": "",
+    "text": "3.1 Software\nBefore we start working with DataOps, it’s important to make sure we have the right tools installed on our computers.\nIn this chapter, we will install the main softwares that will be used throughout the course: R, Rtools (for Windows), RStudio, Git and Quarto.\nWe recommend that you follow the step-by-step instructions and use the default settings for the installations, unless you have specific needs.\nR is a programming language focused on statistics and data analysis. We’ll use it to create scripts and automate processes in DataOps.\nIf you are a Windows user, you need to install Rtools, a set of tools needed to compile R packages.\nRStudio is an integrated development environment (IDE) that makes it easy to work with R, Git and Quarto, providing an easy-to-use interface for writing and running code.\nGit is a version control tool that allows you to track changes in your code, collaborate with other users and to manage projects efficiently. It will be essential for managing our projects in DataOps.\nQuarto is a tool for creating reproducible documents, dynamic reports and dashboards from R code. We will use it to generate our project’s dashboard in an automated way.\nAfter installation, we check that Quarto has been installed correctly by opening the terminal or command prompt and typing quarto check. If all is well, you’ll see a message confirming that Quarto is ready to use.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html#software",
+    "href": "201-instal.html#software",
+    "title": "3  Instalation",
+    "section": "",
+    "text": "Install R\n\n\n\nDownload link: Download R\nChoose your operating system (Windows, MacOS or Linux) and download the latest version of R. - Follow the installer’s instructions and choose the default installation.\n\n\nInstalling Rtools (for Windows)\n\n\n\nDownload link: Download Rtools\nDownload the version compatible with your version of R. For example, for R-4.4.1 you will need to install RTools 4.4\nInstall following the default settings and make sure you tick the option to add Rtools to the system path (PATH).\n\n\nInstalling RStudio\n\n\n\nDownload link: Download RStudio\nDownload the most recent version for your operating system.\nRun the installer and follow the instructions for a standard installation.\n\n\nInstalling Git\n\n\n\nDownload link: Download Git\nChoose the appropriate installer for your operating system (Windows, macOS or Linux).\nDuring installation, follow the instructions for a standard installation.\n\n\nInstalling Quarto\n\n\n\nDownload link: Download Quarto\nDownload the latest version and follow the instructions for a standard installation on your operating system.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html#gitlab-account",
+    "href": "201-instal.html#gitlab-account",
+    "title": "3  Instalation",
+    "section": "3.2 GitLab account",
+    "text": "3.2 GitLab account\nGitLab is a Git repository management platform that allows developers to collaborate on software and/or data projects.\nIn addition, GitLab provides advanced project management features, such as task tracking, backlog management and kanban integration, which can be very useful in DataOps projects.\nA popular alternative to GitLab is GitHub. Participants who prefer this second option will be able to follow the course without too much difficulty.\n\n3.2.1 How to create a GitLab account\n\nIf you don’t already have a GitLab account, go to the GitLab website.\nOn the home page, click the Login button in the top right corner.\nAfter click on Register Now, we can fill in the registration form:\n\n\nAfter filling in all the information, click on the ‘Continue’ button.\n\nVerify your e-mail:\n\nWe will receive an e-mail with a verification code. Enter the code on the GitLab page to activate the account.\n5 Configure your profile:\nAfter verifying the account, we can configure our profile, adding a photo and additional information if we wish.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html#rstudio-configuration",
+    "href": "201-instal.html#rstudio-configuration",
+    "title": "3  Instalation",
+    "section": "3.3 RStudio configuration",
+    "text": "3.3 RStudio configuration\nHaving installed the software and created the GitLab account, we can now make some configurations in RStudio, from where we will have access not only to R, Git and Quarto but also to GitLab.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html#learning-assessment",
+    "href": "201-instal.html#learning-assessment",
+    "title": "3  Instalation",
+    "section": "3.4 Learning assessment",
+    "text": "3.4 Learning assessment\nWhat is GitLab?\n\n A tool exclusively for web developers. A management platform for Git repositories. An online text editor.\n\nWhat is the main alternative to GitLab that has been mentioned??\n\n GitHub Bitbucket SourceForge Mercurial",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "201-instal.html#next",
+    "href": "201-instal.html#next",
+    "title": "3  Instalation",
+    "section": "3.5 Next",
+    "text": "3.5 Next\nNow that we’ve installed all necessary tools, we’re ready to start exploring how we can use them in our DataOps projects. In the next chapter, we’ll introduce the basics of version control with Git and start setting up our first repository.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalation</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html",
+    "href": "202-materia.html",
+    "title": "4  Preparing the data",
+    "section": "",
+    "text": "4.1 Housing Price Index\nIn this training course, we will use real data to build our DataOps pipeline. The data we’ll be using comes from the National Statistics Institute (INE) in Portugal and refers to the Housing Price Index. This index monitors the variation in property sales prices over time in different regions and offers valuable insights into the property market.\nUnfortunately, the data is available in an Excel file and it’s not in a suitable format to be analysed with R.\nSo our tasks will be:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#housing-price-index",
+    "href": "202-materia.html#housing-price-index",
+    "title": "4  Preparing the data",
+    "section": "",
+    "text": "Highlight Housing Price Index\n\n\n\n\n\ndownload the data from the INE website;\nextract the data from Excel into a data frame format;\nmake some tables and graphs for our dashboard.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#create-a-repository",
+    "href": "202-materia.html#create-a-repository",
+    "title": "4  Preparing the data",
+    "section": "4.2 Create a repository",
+    "text": "4.2 Create a repository\nNow that we have an idea of what we’re going to do, we can create our first repository in GitLab.\n\nGitLab Repository",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#local-project",
+    "href": "202-materia.html#local-project",
+    "title": "4  Preparing the data",
+    "section": "4.3 Local project",
+    "text": "4.3 Local project\n\n4.3.1 Clone the repository\nNow that we have created the new project in GitLab let’s clone it to our local machine.\n\n\n\n4.3.2 The first commit\nThe project on our local machine has been created with version control, so we can start using Git.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#extrat-da-from-excel",
+    "href": "202-materia.html#extrat-da-from-excel",
+    "title": "4  Preparing the data",
+    "section": "4.4 Extrat da from Excel",
+    "text": "4.4 Extrat da from Excel\nIn this project we’re going to use only data from 2019 to 2024 from sheets Q1, Q5 and Q6 of the Excel file. To do so, we’ll build an R script that will download the original data and then prepare it in the format we want.\n\nR script",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#change-log",
+    "href": "202-materia.html#change-log",
+    "title": "4  Preparing the data",
+    "section": "4.5 Change log",
+    "text": "4.5 Change log\nOnce the data has been wrangled and prepared to be used, we record the changes with Git, ignoring the file with the original data.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#learning-assessment",
+    "href": "202-materia.html#learning-assessment",
+    "title": "4  Preparing the data",
+    "section": "4.6 Learning assessment",
+    "text": "4.6 Learning assessment\nIn RStudio, how can you clone a GitLab repository?\n\n Running the git clone command directly from the RStudio console. Click on Tools &gt; Git &gt; Clone Project and provide the URL of the repository. Surfing to File &gt; New Project &gt; Version Control &gt; Git and pasting the URL of the GitLab repository. Using the shortcut Ctrl + Shift + C to clone the repository directly.\n\nWhat is commit for?\n\n To clone a Git repository. To undo changes made to a repository. To integrate different repositories into a single project. To create a checkpoint that saves changes in the repository and creates a history of the project.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "202-materia.html#next",
+    "href": "202-materia.html#next",
+    "title": "4  Preparing the data",
+    "section": "4.7 Next",
+    "text": "4.7 Next\nNow that we have our data in a more suitable format, we can start making our dashboard. In the next chapter we’ll start building our quarto file, where we’ll have some visualisations of the data.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparing the data</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html",
+    "href": "203-dash.html",
+    "title": "5  Quarto Dashboard",
+    "section": "",
+    "text": "5.1 A new branch\nCreating a new branch in Git is a fundamental practice in version control, allowing us to:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#a-new-branch",
+    "href": "203-dash.html#a-new-branch",
+    "title": "5  Quarto Dashboard",
+    "section": "",
+    "text": "isolate features: in a branch we can work on a new feature, fix bugs, or experiment without interfering with the main code (usually the main or master branch);\nfacilitate collaborations: in a team, each developer can work on a specific task in their own branch. This makes it easier to work simultaneously, as it prevents one person from accidentally overwriting another’s code.\norganise our history: branches help to keep the history of commits more organised. Each branch represents a specific unit of work, which makes it easier to review the history of the project, and helps to understand the development of functionality.\neasly revert and test: as the changes remain in a separate branch, we can more easily test and revert our code if there are errors.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#hpi-dashboard",
+    "href": "203-dash.html#hpi-dashboard",
+    "title": "5  Quarto Dashboard",
+    "section": "5.2 HPI Dashboard",
+    "text": "5.2 HPI Dashboard\nWe build our dashboard in parts from the data we prepare for the IPH.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#merge-request",
+    "href": "203-dash.html#merge-request",
+    "title": "5  Quarto Dashboard",
+    "section": "5.3 merge request",
+    "text": "5.3 merge request\nWhen we are happy with our development, we should move the functionalities we have created into the main branch of our repository.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#development-branch",
+    "href": "203-dash.html#development-branch",
+    "title": "5  Quarto Dashboard",
+    "section": "5.4 Development branch",
+    "text": "5.4 Development branch\nWe divide our work into development branches which, when complete, are merged into the main branch in GitLab.\n\nWhen we have finished this part of the development, we commit the changes, push them to GitLab, and finally merge them into the main branch.\nFinally, we return to the project on our local PC and pull it from the main branch of GitLab:\n\nQuarto script",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#learning-assessment",
+    "href": "203-dash.html#learning-assessment",
+    "title": "5  Quarto Dashboard",
+    "section": "5.5 Learning assessment",
+    "text": "5.5 Learning assessment\nWhich of the following practices are facilitated when we create a new branch in Git?\n\n Ensure that all code is permanently deleted when it is no longer needed. Ensure that no-one else can mess with our code. Facilitate collaboration, organise the history of commits and isolate functionalities. Publish the project automatically on the Internet.\n\nWhy is the use of branches with Git important for collaborative development?\n\n Because it allows you to organise interactive visualisations on dashboards. Because it facilitates experimentation and collaboration without interfering with the main code. Because it allows automatic publication of the code online. Because it automatically organises project files.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "203-dash.html#next",
+    "href": "203-dash.html#next",
+    "title": "5  Quarto Dashboard",
+    "section": "5.6 Next",
+    "text": "5.6 Next\nWe already have our dashboard (at least the first version) and we’ve learnt how to work with branches and how to merge, but Git allows us to do more. In the next chapter we’ll be able to see more of the possibilities of version control with Git.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto *Dashboard*</span>"
+    ]
+  },
+  {
+    "objectID": "204-versoes.html",
+    "href": "204-versoes.html",
+    "title": "6  Previous versions",
+    "section": "",
+    "text": "6.1 History of changes\nWe can access and review the changes via RStudio.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
+    ]
+  },
+  {
+    "objectID": "204-versoes.html#review-a-previous-commit",
+    "href": "204-versoes.html#review-a-previous-commit",
+    "title": "6  Previous versions",
+    "section": "6.2 Review a previous commit",
+    "text": "6.2 Review a previous commit\nIn the Git Bash terminal, we use the command git checkout &lt;commit-id&gt;:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
+    ]
+  },
+  {
+    "objectID": "204-versoes.html#back-to-thee-future",
+    "href": "204-versoes.html#back-to-thee-future",
+    "title": "6  Previous versions",
+    "section": "6.3 Back to thee future",
+    "text": "6.3 Back to thee future\nWe may also need to view a previous commit and return to the current point, without registering any changes.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
+    ]
+  },
+  {
+    "objectID": "204-versoes.html#learning-assessment",
+    "href": "204-versoes.html#learning-assessment",
+    "title": "6  Previous versions",
+    "section": "6.4 Learning assessment",
+    "text": "6.4 Learning assessment\nWhat is the main role of a commit in Git?\n\n Capture a moment in time with the changes made during code development. Undo all changes made to a branch. Create a new branch in the repository. Check compatibility between two versions of the code.\n\nWhat command do we use in the Git Bash terminal to review a previous commit?\n\n git reset 'commit-id' git checkout 'commit-id' git branch 'commit-id' git commit 'commit-id'",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
+    ]
+  },
+  {
+    "objectID": "204-versoes.html#next",
+    "href": "204-versoes.html#next",
+    "title": "6  Previous versions",
+    "section": "6.5 Next",
+    "text": "6.5 Next\nNow we even know how to use commit to go back in time. In the next chapter, we’ll complete our project by keeping track of the R packages versions that we’ve used.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Previous versions</span>"
+    ]
+  },
+  {
+    "objectID": "205-renv.html",
+    "href": "205-renv.html",
+    "title": "7  Project Library",
+    "section": "",
+    "text": "7.1 {renv}\nWe start by installing the {renv} package, just as we would install any other package in R:\nThen we can start taking advantage of it:\nSome basic {renv} functions:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Project Library</span>"
+    ]
+  },
+  {
+    "objectID": "205-renv.html#renv",
+    "href": "205-renv.html#renv",
+    "title": "7  Project Library",
+    "section": "",
+    "text": "Ushey and Wickham (2024)\n\n\n\ninstall.packages(\"renv\")",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Project Library</span>"
+    ]
+  },
+  {
+    "objectID": "205-renv.html#learning-assessment",
+    "href": "205-renv.html#learning-assessment",
+    "title": "7  Project Library",
+    "section": "7.2 Learning assessment",
+    "text": "7.2 Learning assessment\nWhat is one of the main advantages of using the {renv} package to manage libraries in R projects?\n\n Allows us to share packages between projects without creating new libraries. Ensures that the development environment is reproducible by recording the exact versions of the packages used. It makes it easier to upload packages to CRAN automatically. Automatically installs outdated packages.\n\nHow does {renv} save time when creating a new project-specific library?\n\n Automatically downloading the latest version of each package. Using packages from an online library to speed up the process. Installing packages in a test version to reduce errors. Copying packages from the R standard library if they are already installed, instead of downloading them again.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Project Library</span>"
+    ]
+  },
+  {
+    "objectID": "205-renv.html#next",
+    "href": "205-renv.html#next",
+    "title": "7  Project Library",
+    "section": "7.3 Next",
+    "text": "7.3 Next\nIn the next chapter, we’ll define some good practices in team development and collaborative work.\n\n\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project Environments. https://CRAN.R-project.org/package=renv.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Project Library</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html",
+    "href": "206-colab.html",
+    "title": "8  Colaboration",
+    "section": "",
+    "text": "8.1 Find\nTeam members need to be able to find code quickly and easily.\nWhether it’s to solve a problem, collaborate on a task, or continue someone else’s work, scattered or poorly organised code should always be avoided.\nUsing a platform like GitLab with well-organised repositories based on Git version control should be the foundation of any project. This includes the need to have an informative README.md file for each project.\nIt is also advisable to define naming conventions (for files, scripts or folders) that are clear and use intuitive names.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#run",
+    "href": "206-colab.html#run",
+    "title": "8  Colaboration",
+    "section": "8.2 Run",
+    "text": "8.2 Run\nEveryone working on a project should be able to run the code consistently, without failures due to undocumented or poorly managed dependencies. Using the {renv} package (Ushey and Wickham 2024) allows us to create package libraries per project and track the version of R used. A tool like Docker allows us to go a step further and create isolated environments for distributing and running code that works consistently on different systems.\nWriting clear instructions in README on how to run the code and regularly testing scripts on different machines are ways of ensuring the robustness of the code.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#understand",
+    "href": "206-colab.html#understand",
+    "title": "8  Colaboration",
+    "section": "8.3 Understand",
+    "text": "8.3 Understand\nIn a mature team, members should be able to understand each other’s code in order to contribute or solve problems without relying too much on explanations.\nDocumenting functions in a standard format using R’s {roxygen2} (Wickham et al. 2024) package, or simply adding explanatory comments throughout the code, can help with this understanding.\nWe want concise but informative comments that explain not only the ‘how’ but also the ‘why’. Doing team code reviews promote common understanding and help improve the technical documentation of scripts and workflows.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#edit",
+    "href": "206-colab.html#edit",
+    "title": "8  Colaboration",
+    "section": "8.4 Edit",
+    "text": "8.4 Edit\nWhen changes or improvements are needed to the code, every member of the team should be able to make changes without introducing errors or mess with existing work.\nThis is where version control with Git is essential, whether to ensure that work is not lost, or to communicate and manage conflicts or inconsistencies.\nDescriptive and informative commit messages, working in separate branches and running merge requests for review before integration with the main code are tasks that must be mastered by the whole team and cannot be overlooked.\nImplementing automated tests to ensure that new changes don’t break existing code should also be common practice in data science projects.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#summarising",
+    "href": "206-colab.html#summarising",
+    "title": "8  Colaboration",
+    "section": "8.5 Summarising",
+    "text": "8.5 Summarising\n\nCommunication: All team members need to know not only where to look for information but also how to interact with the code.\nCulture of Quality: Adopting consistent standards makes it easier for all levels of the hierarchy to meet requirements.\nCommon Tools: It’s not enough for everyone to write code in R, it’s also necessary for everyone to use tools like Git and a platform like GitLab.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#learning-assessment",
+    "href": "206-colab.html#learning-assessment",
+    "title": "8  Colaboration",
+    "section": "8.6 Learning assessment",
+    "text": "8.6 Learning assessment\nWhich tool is used to create isolated environments and guarantee consistent code execution?\n\n Docker Git GitLab {roxygen2}\n\nFrom what you’ve learnt, which practices help facilitate the “Edit” level?\n\n Create package libraries with {renv}. Implement descriptive commit messages and use separate branches. Use explanatory comments to understand the code. Adopt clear naming conventions.\n\nWhich of the following aspects has been identified as fundamental to success at all levels of the code hierarchy?\n\n Having team members who master one specific tool. Use the same local development environment. Adopt a culture of quality and common tools. Focus exclusively on flawless code execution.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#next",
+    "href": "206-colab.html#next",
+    "title": "8  Colaboration",
+    "section": "8.7 Next",
+    "text": "8.7 Next\nAll that remains is to publish our final product. In the next chapter, we’ll make our dashboard publicly available, simply and free of charge.\n\n\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project Environments. https://CRAN.R-project.org/package=renv.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.\n\n\nWickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster. 2024. Roxygen2: In-Line Documentation for r. https://roxygen2.r-lib.org/.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboration</span>"
+    ]
+  },
+  {
+    "objectID": "207-pub.html",
+    "href": "207-pub.html",
+    "title": "9  Publication",
+    "section": "",
+    "text": "Finally (and as a bonus), we’re going to make our dashboard public. We’ll use the netlify service, so that we can publish our dashboard on the Internet simply, quickly and free of charge.\nFirst of all, we need to make a small change to our project:\n\nNow all we have to do the log in to netlify with our Gitlab account and point to our repository:\n\nIPH",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Publication</span>"
+    ]
+  },
+  {
+    "objectID": "800-avaliacao.html",
+    "href": "800-avaliacao.html",
+    "title": "10  Final assessment",
+    "section": "",
+    "text": "In this final assessment of the course DataOps basics: a practical guide with R, Git and Quarto, attendees are guaranteed a pass if they answer correctly to more than 50% of the questions.\nAnswer to all the questions:\n\nWhich option best describes the main purpose of DataOps??\n\n\n Centralise all of company's data in a single location. Facilitate automation and collaboration in data analysis, guaranteeing reproducibility. Replace traditional software development processes. Increase data processing speed.\n\n\nIn Git, what command should we use to send local changes to the remote repository in GitLab? \nWhat file is created by the {renv} package to record the versions of the packages used in a project, allowing the environment to be reproducible? \nWhich of the following statements best describes the use of branches in Git?\n\n\n A branch allows you to try out new features without affecting the main code. Branches eliminate the need for commits. A branch always needs to be merged automatically. Branches remove the need for version control.\n\n\nWhich R function should we use to start managing packages with {renv}?\nrenv:: \nTRUE or FALSE? In RStudio we can visualise the history of commits and merges of a project integrated with Git. TRUEFALSE\nTRUE or FALSE? The renv.lock file allows you to restore a project on any computer, keeping the same versions of the packages, even if they are not available in the standard R library. TRUEFALSE\nWhat is the most basic level of the hierarchy of code requirements in Data Science?\n\n\n Understand Edit Find Run\n\n\nWhat is the recommended practice to facilitate the ‘Find’ level of the hierarchy of needs?\n\n\n Use {renv} to manage dependencies. Create an isolated environment with Docker. Perform code reviews as a team. Maintain an informative README.md for each project.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Final assessment</span>"
+    ]
+  },
+  {
+    "objectID": "900-summary.html",
+    "href": "900-summary.html",
+    "title": "11  Conclusion",
+    "section": "",
+    "text": "By concluding the introductory course DataOps basics: a practical guide with R, Git and Quarto, we hope to have provided a foundation that will allow us to implement the fundamental principles of DataOps in future projects.\n\n\n\nDataOps basics\n\n\nWe started with a simple definition of DataOps, emphasising its importance in today’s data analysis landscape: an approach that enables efficient, automated and collaborative data management, facilitating the rapid delivery of reliable and reproducible insights.\nIn this course, we introduced essential tools for implementing a DataOps approach: R, RStudio, Quarto, Git and GitLab. Each plays a critical role in the data lifecycle and the data scientist’s workflow. With these resources, we explored a practical case based on INE’s House Price Index, giving a practical, real-world application to the concepts of DataOps.\nThroughout our process, we created a repository in GitLab, which was cloned locally using RStudio, providing a central point for version control of our project. As we developed our dashboard in Quarto, we committed changes to the code, created new branches to experiment with features and improvements, pushed the changes to GitLab and finished with merge requests, merging our code changes into the main branch. We also pulled the approved changes to our local environment, ensuring that the versions were always in sync.\nThe history of commits and merges was always accessible in RStudio, providing a clear view of our progress and allowing us to track changes made throughout the project.\nWe also introduced the {renv} package to keep track of the R packages versions that we used, which is essential for ensuring the reproducibility and dependency control of the project, making it easier to maintain and run the code in the future, regardless of any updates to the packages.\nWe have also presented a hierarchy of code needs in data science projects, suggested by Wickham (2024), which emphasises collaborative practices, organisation, consistency, documentation and version control to ensure efficiency and quality.\nWe conclude with a complete example of how to apply DataOps in a data analysis workflow. Practising with version control and package management tools creating a solid foundation for developing robust analyses, facilitating both team collaboration and the continuous evolution of projects.\nFor those who want to delve deeper into the world of DataOps, the book Building Reproducible Analytical Pipelines with R (Rodrigues 2023) is an enlightened source full of the best content to help data scientists, statisticians or researchers.\nWe hope this course has been a useful and inspiring starting point for your DataOps journey!\n\n\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical Pipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referências",
+    "section": "",
+    "text": "Government Analysis Function. 2024. “Reproducible Analytical\nPipelines (RAP).” 2024. https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/.\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical\nPipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.\n\n\n“The DataOps Manifesto.” 2024. 2024. https://dataopsmanifesto.org/en/.\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project\nEnvironments. https://CRAN.R-project.org/package=renv.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.\n\n\nWickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster.\n2024. Roxygen2: In-Line Documentation for r. https://roxygen2.r-lib.org/.",
+    "crumbs": [
+      "Referências"
+    ]
+  }
+]
