@@ -1,0 +1,81 @@
+# Quarto *Dashboard*
+
+In this project we want to create a *dashboard* describing the Housing Price Index (HPI) using data from the INE portal.
+
+Creating *dashboards* with Quarto offers us many advantages, especially when we are working with R. We can combine interactive visualisations with a customisable *layout* and *design*, making it easy to adapt to different devices, such as *mobile* and *desktop*. 
+
+Another advantage is the flexibility to publish it, which allows us to share dashboards *online* with just a few clicks.
+ 
+## A new *branch*
+
+Creating a new *branch* in Git is a fundamental practice in version control, allowing us to:
+
++ isolate features: in a *branch* we can work on a new feature, fix *bugs*, or experiment without interfering with the main code (usually the *main* or *master* *branch*); 
+
++ facilitate collaborations: in a team, each developer can work on a specific task in their own *branch*. This makes it easier to work simultaneously, as it prevents one person from accidentally overwriting another's code.
+
++ organise our history: *branches* help to keep the history of commits more organised. Each *branch* represents a specific unit of work, which makes it easier to review the history of the project, and helps to understand the development of functionality.
+
++ easly revert and test: as the changes remain in a separate branch, we can more easily test and revert our code if there are errors.
+
+{{< video https://youtu.be/AjZg4PoitLM >}}
+ 
+## HPI *Dashboard*
+
+We build our *dashboard* in parts from the data we prepare for the IPH.
+
+{{< video https://youtu.be/OzSiAs1lrNQ >}}
+
+## *merge request*
+
+When we are happy with our development, we should move the functionalities we have created into the *main* branch of our repository.
+
+{{< video https://youtu.be/Ey-F7KS6WQc >}}
+
+## Development *branch*
+
+We divide our work into development *branches* which, when complete, are *merged* into the *main branch* in GitLab.
+
+{{< video https://youtu.be/t5xOjJxYHmw >}}
+
+When we have finished this part of the development, we *commit* the changes, *push* them to GitLab, and finally *merge* them into the *main branch*.
+
+Finally, we return to the project on our local PC and *pull* it from the *main branch* of GitLab:
+
+{{< video https://youtu.be/zQDiQdRHR3M >}}
+
+[Quarto *script*](R/dash_IPH.qmd){.uri target="_blank"}
+
+## Learning assessment
+
+**Which of the following practices are facilitated when we create a new *branch* in Git?**
+
+```{r}
+#| echo: false
+q_branch1 <- c(
+   "Ensure that all code is permanently deleted when it is no longer needed.",
+   "Ensure that no-one else can mess with our code.",
+   answer = "Facilitate collaboration, organise the history of commits and isolate functionalities.",
+   "Publish the project automatically on the Internet."
+)
+```
+
+`r longmcq(q_branch1)`
+
+**Why is the use of *branches* with Git important for collaborative development?**
+
+```{r}
+#| echo: false
+q_branch2 <- c(
+   "Because it allows you to organise interactive visualisations on dashboards.",
+   answer = "Because it facilitates experimentation and collaboration without interfering with the main code.",
+   "Because it allows automatic publication of the code online.",
+   "Because it automatically organises project files."
+)
+```
+
+`r longmcq(q_branch2)`
+
+## Next
+ 
+We already have our *dashboard* (at least the first version) and we've learnt how to work with *branches* and how to *merge*, but Git allows us to do more. In the next chapter we'll be able to see more of the possibilities of version control with Git.

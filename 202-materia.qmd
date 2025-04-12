@@ -1,0 +1,89 @@
+# Preparing the data
+
+Data is the raw material for every data scientist. Like any other craftsman, we can't create a data product without our raw material.
+
+## Housing Price Index
+
+In this training course, we will use real data to build our _DataOps_ pipeline. The data we'll be using comes from the National Statistics Institute (INE) in Portugal and refers to the Housing Price Index. This index monitors the variation in property sales prices over time in different regions and offers valuable *insights* into the property market.
+
+[![Highlight Housing Price Index](images/ine_IPH.jpg){width=80%}](https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_destaques&DESTAQUESdest_boui=645841545&DESTAQUESmodo=2){.uri target="_blank"}
+
+Unfortunately, the data is available in an Excel file and it's not in a suitable format to be analysed with R.
+
+So our tasks will be:
+
++ download the data from the INE website; 
++ extract the data from Excel into a *data frame* format;
++ make some tables and graphs for our *dashboard*.
+
+## Create a repository
+
+Now that we have an idea of what we're going to do, we can create our first repository in GitLab.
+
+{{< video https://youtu.be/S_kn0a2-v-0 >}}
+
+[GitLab Repository](https://gitlab.com/dataopsbasics/analise-iph){.uri target="_blank"}
+
+## Local project
+
+### Clone the repository
+
+Now that we have created the new project in GitLab let's clone it to our local machine.
+
+{{< video https://youtu.be/kH_CqwfxLbM >}}
+
+### The first *commit*
+
+The project on our local machine has been created with version control, so we can start using Git.
+
+{{< video https://youtu.be/yeT5BToqTUg >}}
+
+## Extrat da from Excel
+
+In this project we're going to use only data from 2019 to 2024 from sheets Q1, Q5 and Q6 of the Excel file. To do so, we'll build an R *script* that will *download* the original data and then prepare it in the format we want.
+
+{{< video https://youtu.be/vpCASQ7p49c >}}
+
+[R *script*](R/prepara_dados.R){.uri target="_blank"}
+
+## Change log
+
+Once the data has been wrangled and prepared to be used, we record the changes with Git, ignoring the file with the original data.
+
+{{< video https://youtu.be/tug28oxUA7o >}}
+
+## Learning assessment
+
+**In RStudio, how can you clone a GitLab repository?**
+
+```{r}
+#| echo: false
+q_rstudio1 <- c(
+   "Running the `git clone` command directly from the RStudio console.",
+   "Click on **Tools** > **Git** > **Clone Project** and provide the URL of the repository.",
+   answer = "Surfing to **File** > **New Project** > **Version Control** > **Git** and pasting the URL of the GitLab repository.",
+   "Using the shortcut **Ctrl + Shift + C** to clone the repository directly."
+)
+```
+
+`r longmcq(q_rstudio1)`
+
+**What is `commit` for?**
+
+```{r}
+#| echo: false
+q_rstudio2 <- c(
+   "To clone a Git repository.",
+   "To undo changes made to a repository.",
+   "To integrate different repositories into a single project.",
+   answer = "To create a checkpoint that saves changes in the repository and creates a history of the project."
+)
+```
+
+`r longmcq(q_rstudio2)`
+
+## Next
+
+Now that we have our data in a more suitable format, we can start making our *dashboard*. In the next chapter we'll start building our *quarto* file, where we'll have some visualisations of the data.
+
+

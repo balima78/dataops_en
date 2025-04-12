@@ -1,0 +1,59 @@
+# Project Library
+
+Having completed the first version of our *dashboard*, we need to ensure the reproducibility of the work we have done. A quick and cheap way to do this is to keep track of the versions of the packages we use (as well as the version of R we use in our development).
+
+The [{renv}](https://rstudio.github.io/renv/articles/renv.html){.uri target="_blank"} package allows us to create project-specific libraries (a library is a set of R packages installed on our computer) and record the exact versions of the packages used in a `renv.lock` file. This file makes it possible to restore the environment used on another computer or in the future, isolating the project from other installed libraries. This allows us to keep the development environment consistent over time, and in particular allows us to work with different versions of R packages.
+
+To save time, when a new library is created with [{renv}](https://rstudio.github.io/renv/articles/renv.html){.uri target="_blank"}, the necessary packages are copied from the main R library (if they are already installed in the default library) instead of being downloaded and reinstalled.
+
+## `{renv}`
+
+![@renv](images/renv.svg){width=20%}
+
+We start by installing the `{renv}` package, just as we would install any other package in R:
+
+```
+install.packages("renv")
+```
+
+Then we can start taking advantage of it:
+
+{{< video https://youtu.be/f_hK1XOOVZw >}}
+
+Some basic `{renv}` functions:
+
+{{< video https://youtu.be/ZHFn_pYwPd0 >}}
+
+## Learning assessment
+
+**What is one of the main advantages of using the `{renv}` package to manage libraries in R projects?**
+
+```{r}
+#| echo: false
+q_renv1 <- c(
+   "Allows us to share packages between projects without creating new libraries.",
+   answer = "Ensures that the development environment is reproducible by recording the exact versions of the packages used.",
+   "It makes it easier to upload packages to CRAN automatically.",
+   "Automatically installs outdated packages."
+)
+```
+
+`r longmcq(q_renv1)`
+
+**How does `{renv}` save time when creating a new project-specific library?**
+
+```{r}
+#| echo: false
+q_renv2 <- c(
+   "Automatically downloading the latest version of each package.",
+   "Using packages from an online library to speed up the process.",
+   "Installing packages in a test version to reduce errors.",
+   answer = "Copying packages from the R standard library if they are already installed, instead of downloading them again."
+)
+```
+
+`r longmcq(q_renv2)`
+
+## Next
+ 
+In the next chapter, we'll define some good practices in team development and collaborative work.  

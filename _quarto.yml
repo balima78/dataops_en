@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: _DataOps_ basics
+  author: Bruno A Lima
+  date: '2025-04-01'
+  search: true
+  repo-url: https://gitlab01.lih.lu/blima/dataops
+  repo-actions:
+  - edit
+  - issue
+  repo-branch: main
+  favicon: images/coverDOB.jfif
+  issue-url: https://gitlab01.lih.lu/blima/dataops/issues
+  chapters:
+  - index.qmd
+  - 101-intro.qmd
+  - 102-caracteriza.qmd
+  - 201-instal.qmd
+  - 202-materia.qmd
+  - 203-dash.qmd
+  - 204-versoes.qmd
+  - 205-renv.qmd
+  - 206-colab.qmd
+  - 207-pub.qmd
+  - 800-avaliacao.qmd
+  - 900-summary.qmd
+  - references.qmd
+bibliography: references.bib
+format:
+  html:
+    theme: cosmo
+    css: include/webex.css
+    include-after-body: include/webex.js
+  pdf:
+    documentclass: scrreprt

@@ -1,0 +1,12 @@
+# A practical guide with R, Git and Quarto {.unnumbered}
+
+
+![](images/dob.png){width=70%}
+
+## License
+
+This course is licensed under the [WTFPL](http://www.wtfpl.net/txt/copying/).
+
+<a href="http://www.wtfpl.net/"><img
+       src="images/wtfpl-badge-4.png"
+       width="80" height="15" alt="WTFPL" /></a>

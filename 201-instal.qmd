@@ -1,0 +1,126 @@
+# Instalation
+
+## Software
+
+Before we start working with _DataOps_, it's important to make sure we have the right tools installed on our computers. 
+
+In this chapter, we will install the main _softwares_ that will be used throughout the course: R, Rtools (for Windows), RStudio, Git and Quarto.
+
+We recommend that you follow the step-by-step instructions and use the default settings for the installations, unless you have specific needs.
+
+1. Install R 
+
+R is a programming language focused on statistics and data analysis. We'll use it to create scripts and automate processes in _DataOps_.
+
+  + Download link: [Download R](https://cran.r-project.org/bin/windows/base/){.uri target="_blank"}
+
+  + Choose your operating system (Windows, MacOS or Linux) and download the latest version of R. - Follow the installer's instructions and choose the default installation.
+
+2. Installing Rtools (for Windows) 
+
+If you are a Windows user, you need to install Rtools, a set of tools needed to compile R packages.
+
+  + Download link: [Download Rtools](https://cran.r-project.org/bin/windows/Rtools/){.uri target="_blank"}
+    
+  + Download the version compatible with your version of R. For example, for R-4.4.1 you will need to install RTools 4.4 
+    
+  + Install following the default settings and make sure you tick the option to add Rtools to the system path (PATH).
+
+3. Installing RStudio 
+
+RStudio is an integrated development environment (IDE) that makes it easy to work with R, Git and Quarto,  providing an easy-to-use interface for writing and running code.
+
++ Download link: [Download RStudio](https://posit.co/download/rstudio-desktop/){.uri target="_blank"}
+    
++ Download the most recent version for your operating system.
+    
++ Run the installer and follow the instructions for a standard installation.
+
+4. Installing Git 
+
+Git is a version control tool that allows you to track changes in your code, collaborate with other users and to manage projects efficiently. It will be essential for managing our projects in _DataOps_.
+
++ Download link: [Download Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git){.uri target="_blank"}
+    
++ Choose the appropriate installer for your operating system (Windows, macOS or Linux).
+    
++ During installation, follow the instructions for a standard installation.
+
+5. Installing Quarto 
+
+Quarto is a tool for creating reproducible documents, dynamic reports and dashboards from R code. We will use it to generate our project's *dashboard* in an automated way.
+
++ Download link: [Download Quarto](https://quarto.org/docs/get-started/){.uri target="_blank"}
+    
++ Download the latest version and follow the instructions for a standard installation on your operating system.
+
+After installation, we check that Quarto has been installed correctly by opening the terminal or *command prompt* and typing `quarto check`. If all is well, you'll see a message confirming that Quarto is ready to use.
+
+## GitLab account
+
+**GitLab** is a Git repository management platform that allows developers to collaborate on software and/or data projects. 
+
+In addition, GitLab provides advanced project management features, such as task tracking, *backlog* management and *kanban* integration, which can be very useful in *DataOps* projects.
+
+A popular alternative to GitLab is GitHub. Participants who prefer this second option will be able to follow the course without too much difficulty.
+
+### How to create a GitLab account
+
+1. If you don't already have a GitLab account, go to the [GitLab website](https://gitlab.com/){.uri target="_blank"}.
+
+2. On the home page, click the _Login_ button in the top right corner.
+
+3. After click on [_Register Now_](https://gitlab.com/users/sign_up){.uri target="_blank"}, we can fill in the registration form:
+
+![](images/gitlab_new.jpg) 
+
+After filling in all the information, click on the ‘Continue’ button.
+
+4. Verify your e-mail:
+
+We will receive an e-mail with a verification code. Enter the code on the GitLab page to activate the account.
+
+5 Configure your profile:
+
+After verifying the account, we can configure our profile, adding a photo and additional information if we wish.
+
+## RStudio configuration
+
+Having installed the *software* and created the GitLab account, we can now make some configurations in RStudio, from where we will have access not only to R, Git and Quarto but also to GitLab.
+
+{{< video https://youtu.be/yEA2u6f3coo >}}
+
+## Learning assessment
+
+**What is GitLab?**
+
+```{r}
+#| echo: false
+q_gitlab1 <- c(
+   "A tool exclusively for web developers.",
+   answer = "A management platform for Git repositories.",
+   "An online text editor."
+)
+```
+
+`r longmcq(q_gitlab1)`
+
+**What is the main alternative to GitLab that has been mentioned??**
+
+```{r}
+#| echo: false
+q_gitlab2 <- c(
+  answer = "GitHub",
+   "Bitbucket",
+   "SourceForge",
+   "Mercurial"
+)
+```
+
+`r longmcq(q_gitlab2)`     
+
+
+## Next
+
+Now that we've installed all necessary tools, we're ready to start exploring how we can use them in our _DataOps_ projects. In the next chapter, we'll introduce the basics of version control with Git and start setting up our first repository.
+

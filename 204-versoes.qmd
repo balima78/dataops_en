@@ -1,0 +1,59 @@
+# Previous versions
+
+Git's version control system relies on *commits*, which are snapshots of changes made to our code as it evolves.
+
+In this chapter, we'll list *commits*, see the changes made in previous *commits*, go back to a specific *commit*, create a new *branch*, and *commit* to new changes. 
+
+We'll be using Git integrated with RStudio to do all this.
+
+## History of changes
+
+We can access and review the changes via RStudio.
+
+{{< video https://youtu.be/-bqGPc5zWgw >}}
+
+## Review a previous *commit*
+
+In the Git Bash terminal, we use the command `git checkout <commit-id>`:
+
+{{< video https://youtu.be/Q3YEYsDvA7A >}}
+
+## Back to thee future
+
+We may also need to view a previous *commit* and return to the current point, without registering any changes.
+
+{{< video https://youtu.be/HX_IgYXmYtw >}}
+
+## Learning assessment
+
+**What is the main role of a *commit* in Git?**
+
+```{r}
+#| echo: false
+q_commit1 <- c(
+   answer = "Capture a moment in time with the changes made during code development.",
+   "Undo all changes made to a branch.",
+   "Create a new branch in the repository.",
+   "Check compatibility between two versions of the code."
+)
+```
+
+`r longmcq(q_commit1)`
+
+**What command do we use in the Git Bash terminal to review a previous *commit*?**
+
+```{r}
+#| echo: false
+q_commit2 <- c(
+   "git reset 'commit-id'",
+   answer = "git checkout 'commit-id'",
+   "git branch 'commit-id'",
+   "git commit 'commit-id'"
+)
+```
+
+`r longmcq(q_commit2)`
+
+## Next
+ 
+Now we even know how to use *commit* to go back in time. In the next chapter, we'll complete our project by keeping track of the R packages versions that we've used.

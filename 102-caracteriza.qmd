@@ -1,0 +1,49 @@
+# Description
+
+This course is a private initiative but open to anyone interested.
+
+## Objectives
+
+By the end of this course, we should be able to:
+
+1) Understand the principles of _DataOps_:
+
+    - Understand how a _DataOps_ approach improves development, collaboration and automation in data projects.
+    - Apply the fundamental concepts of _DataOps_ in different contexts (public, private, academic).
+
+1) Use Git for version control and collaboration:
+
+    - Implement version control in data projects using Git.
+    - Collaborate effectively on data projects, manage changes and contribute as part of an integrated team.
+
+1) Automate data workflows with R:
+
+    - Create and automate scripts in R for reproducible and efficient analyses.
+    - Use programming and automation good practices in data science.
+    
+1) Generate reproducible documentation with Quarto:
+
+    - Create dynamic and interactive dashboards using Quarto.
+    - Integrate Quarto with Git for version control and automating documents in data pipelines.
+    
+1) Implement a complete _DataOps_ Pipeline:
+
+    - Combine R, Git and Quarto to build an automated _DataOps_ pipeline.
+    - Deliver reliable and reproducible results continuously in data science projects.
+    
+## Prerequisites
+
+This course is designed for students and professionals who want to learn how to apply the principles of _DataOps_ in data science projects, automating workflows and ensuring the reproducibility of results. To follow the content effectively, it is recommended that participants have the following knowledge:
+
+1) Familiarity with R:
+
+    - The course will use R as the main programming language for data analysiss. It is desirable that participants have a basic familiarity with R, including the creation of simple scripts and the use of R packages.
+    - However, even if they are not fluent R users, they will be able to follow the course, as clear and practical examples will be given.
+
+1) Understanding of Git (not required, but recommended):
+
+    - A basic understanding of version control with Git will be useful, but the course will include an introduction to the tool so that beginners will be able to learn the concepts and apply the practices throughout the course.
+    
+1) Curiosity and willingness to learn:
+
+    - This course has a hands-on approach, so curiosity and a willingness to learn new tools and methodologies are essential. We will take participants step-by-step through the use of R, Git and Quarto and show how these tools can be integrated into an efficient _DataOps_ pipeline.

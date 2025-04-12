@@ -1,0 +1,82 @@
+---
+title: "Final assessment"
+---
+
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Uncomment to change widget colours:
+style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+In this final assessment of the course **_DataOps_ basics: a practical guide with R, Git and Quarto**, attendees are guaranteed a pass if they answer correctly to more than 50% of the questions.
+
+Answer to all the questions:
+
+1. **Which option best describes the main purpose of _DataOps_??**
+
+```{r}
+#| echo: false
+q_final1 <- c(
+   "Centralise all of company's data in a single location.",
+ answer = "Facilitate automation and collaboration in data analysis, guaranteeing reproducibility.",
+ "Replace traditional software development processes.",
+ "Increase data processing speed."
+)
+```
+
+`r longmcq(q_final1)`
+
+2. **In Git, what command should we use to send local changes to the remote repository in GitLab?** `r fitb('push')`
+
+3. **What file is created by the `{renv}` package to record the versions of the packages used in a project, allowing the environment to be reproducible?** `r fitb('renv.lock')`
+
+4. **Which of the following statements best describes the use of *branches* in Git?**
+
+```{r}
+#| echo: false
+q_final4 <- c(
+   answer = "A branch allows you to try out new features without affecting the main code.",
+ "Branches eliminate the need for commits.",
+ "A branch always needs to be merged automatically.",
+ "Branches remove the need for version control."
+)
+```
+
+`r longmcq(q_final4)`
+
+5. **Which R function should we use to start managing packages with `{renv}`?**  
+`renv::` `r fitb('init()')`
+
+6. *TRUE or FALSE*? **In RStudio we can visualise the history of *commits* and *merges* of a project integrated with Git.** `r torf(TRUE)`
+
+7. *TRUE or FALSE*? **The `renv.lock` file allows you to restore a project on any computer, keeping the same versions of the packages, even if they are not available in the standard R library.** `r torf(TRUE)`
+
+8. **What is the most basic level of the hierarchy of code requirements in Data Science?**
+
+```{r}
+#| echo: false
+q_final5 <- c(
+   "Understand",
+   "Edit",
+   answer = "Find",
+   "Run"
+)
+```
+
+`r longmcq(q_final5)`
+
+9. **What is the recommended practice to facilitate the 'Find' level of the hierarchy of needs?**
+
+```{r}
+#| echo: false
+q_final6 <- c(
+   "Use {renv} to manage dependencies.",
+ "Create an isolated environment with Docker.",
+ "Perform code reviews as a team.",
+ answer = "Maintain an informative README.md for each project."
+)
+```
+
+`r longmcq(q_final6)`
+

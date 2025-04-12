@@ -1,0 +1,23 @@
+# Conclusion
+
+By concluding the introductory course **_DataOps_ basics: a practical guide with R, Git and Quarto**, we hope to have provided a foundation that will allow us to implement the fundamental principles of *DataOps* in future projects.
+
+![_DataOps_ basics](images/brainDO.png)
+
+We started with a simple definition of *DataOps*, emphasising its importance in today's data analysis landscape: an approach that enables efficient, automated and collaborative data management, facilitating the rapid delivery of reliable and reproducible *insights*.
+
+In this course, we introduced essential tools for implementing a DataOps approach: R, RStudio, Quarto, Git and GitLab. Each plays a critical role in the data lifecycle and the data scientist's workflow. With these resources, we explored a practical case based on INE's House Price Index, giving a practical, real-world application to the concepts of *DataOps*.
+
+Throughout our process, we created a repository in GitLab, which was cloned locally using RStudio, providing a central point for version control of our project. As we developed our *dashboard* in Quarto, we *committed* changes to the code, created new *branches* to experiment with features and improvements, *pushed* the changes to GitLab and finished with *merge requests*, merging our code changes into the main *branch*. We also *pulled* the approved changes to our local environment, ensuring that the versions were always in sync.
+
+The history of *commits* and *merges* was always accessible in RStudio, providing a clear view of our progress and allowing us to track changes made throughout the project. 
+
+We also introduced the `{renv}` package to keep track of the R packages versions that we used, which is essential for ensuring the reproducibility and dependency control of the project, making it easier to maintain and run the code in the future, regardless of any updates to the packages.
+
+We have also presented a hierarchy of code needs in data science projects, suggested by @hw, which emphasises collaborative practices, organisation, consistency, documentation and version control to ensure efficiency and quality.
+
+We conclude with a complete example of how to apply *DataOps* in a data analysis workflow. Practising with version control and package management tools creating a solid foundation for developing robust analyses, facilitating both team collaboration and the continuous evolution of projects.
+
+For those who want to delve deeper into the world of *DataOps*, the book [Building Reproducible Analytical Pipelines with R](https://raps-with-r.dev/) [@br] is an enlightened source full of the best content to help data scientists, statisticians or researchers.
+
+We hope this course has been a useful and inspiring starting point for your *DataOps* journey!

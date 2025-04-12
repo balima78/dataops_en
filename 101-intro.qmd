@@ -1,0 +1,62 @@
+# Introduction
+
+**_DataOps_ basics: a practical guide with R, Git e Quarto** is a training course designed to provide a practical understanding of _DataOps_, a methodology that integrates automation and collaboration processes to improve efficiency in data science projects. 
+
+In _wikipedia_ we can find as a [ _DataOps_ definition](https://en.wikipedia.org/wiki/DataOps){.uri target="_blank"}, something like:   
+
+>
+DataOps is a set of practices, processes and technologies that combines an integrated, process-orientated perspective on data with automation and software engineering methods. 
+This approach uses *agile* project management to improve quality, speed and collaboration, promoting a culture of continuous improvement in the field of data science.
+>
+
+Using tools such as R, Git and Quarto, trainees will learn how to optimise data development, analysis and documentation, ensuring reproducibility, version control and workflow automation. Taking into account @manifesto principles, the aim is to develop processes that are based on these principles and facilitate the delivery of data products.
+
+The *DataOps* approach can be applied in a number of areas, including:
+
++ Public Institutions: to ensure that analyses and reports are generated consistently and automatically, reducing time and manual effort.
++ Private Industry: to increase the productivity of data and development teams, enabling the continuous delivery of valuable *insights* for strategic decision-making.
++ Academic Research: to ensure that studies and research projects are easily reproducible and collaborative, to enable sharing results and continuous development of research.
+
+![Implementing a DataOps approach](images/dataops.png)
+
+Throughout this course, we'll learn how to take advantage of the capabilities of *R* for statistical data analysis, *Git* for version control and collaboration, and *Quarto* to generate reproducible *dashboards* with literate programming.
+
+The definition of Reproducible Analytical Pipelines (RAPs) is based on software engineering best practices and aims to ensure the production of data pipelines that are reproducible, auditable, efficient and of high quality [@rap].
+
+Together we will explore how these principles can be applied to improve the efficiency, quality and reliability of data operations.
+
+## Learning assessment
+
+**What is _DataOps_, according to the definition on Wikipedia?**
+
+```{r}
+#| echo: false
+
+library(webexercises)
+
+q_dataops1 <- c(
+  "A project management software",
+  "A type of database for data science",
+  "A data visualisation technique",
+  answer = "A set of practices that combines data processes with software engineering and agile project management methods"
+)
+```
+
+`r longmcq(q_dataops1)`
+
+**In which areas can the _DataOps_ approach be applied??**
+
+```{r}
+#| echo: false
+q_dataops2 <- c(
+  answer = "Public institutions, private industry and academic research",
+   "Only in public institutions",
+   "Exclusively in technology companies",
+   "Only in open source projects"
+)
+```
+
+`r longmcq(q_dataops2)`     
+
+
+
